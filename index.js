@@ -12,11 +12,6 @@ app.get(`/search`, async (req, res) => {
   res.status(200).send(result)
 })
 
-app.get(`/edu`, async (req, res) => {
-  const result = await util.brokeDataEdu(`edu`)
-  res.status(200).send(result)
-})
-
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
